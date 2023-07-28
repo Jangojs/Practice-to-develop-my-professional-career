@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive set gaming wbesite</title>
+    <!--custom css link-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--custom boxicons links-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--custom googlefonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900display=swap">
+</head>
+<body>
+    <!--header design-->
+    <header>
+        <a href="#" class="logo"><box-icon name='headphone'class="bx bx-headphone"></box-icon>Soundbox</a>
+
+        <ul class="navbar">
+            <li><a href="#" class="active">Overview</a></li>
+            <li><a href="#">Teach Specs</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <box-icon name="cart" class="bx bx-cart"></box-icon>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!--home design-->
+    <section class="home">
+        <div class="home-img">
+            <img src="img/logitech1.png" class="one">
+        </div>
+
+        <div class="home-text">
+            <h1>Logitech <br> Headphones</h1>
+            <h5>Logitech G335 - Auriculares con cable para videojuegos, <br>
+                micrófono abatible, conector de audio de 3.5 mm, almohadillas de espuma <br> 
+                viscoelástica, para PC, Playstation, Xbox y Nintendo Switch, negros</h5>
+            <h3>$39.99</h3>
+            <a href="https://www.amazon.com/-/es/Logitech-G335-3-5-almohadillas-viscoelástica/dp/B08KKBSDTY?th=1" class="btn">Shop Now</a>
+        </div>
+    
+    </section>
+    
+    <div class="main">
+            <div class="row">
+                <li><img src="img/logitech1.png" onclick="slider('img/logitech1.png')"></li>
+            </div>
+            <div class="row row2">
+                <li><img src="img/intel.png" onclick="slider('img/intel.png')"></li>
+            </div>
+            <div class="row row3">
+                <li><img src="img/aorus.png" onclick="slider('img/aorus.png')"></li>
+            </div>
+        </div>
+
+        <a href="" class="botton">Scroll Down<box-icon type='solid' name='chevron-down' class="bx bx-chevron-down"></box-icon></a>
+
+        <script type="text/javascript">
+            function slider(anything){
+                document.querySelector('.one').src = anything;
+            };
+
+            let menu = document.querySelector('#menu-icon');
+            let navbar = document.querySelector('.navbar');
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x');
+                navbar.classList.toggle('open')
+            }
+        </script>
+</body>
+</html>
