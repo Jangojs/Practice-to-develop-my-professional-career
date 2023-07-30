@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATFJREFUSEvNlYFtwkAMRX8mgU5SmAQ6ScsksAkwCWwCemqu8jn2kVAiYSmKOO78v/3/OZ1mjm7m/HoLgJWkjSTexLV/nyUdzO+wGa0KlpL2JnHWzV0LKAOA7XGCPlTyFe2PAGB+SZKf+nX28BCsrTMyEQDMS7/LOdjB0saPpEXGvGz0AJ49gsKuCDuha79bPQCsvk0WBGTt6fAA9L70FtYfQWac1QpI/VXsAW7mZAZg90RAlV6tCjJ3PAKo2toCiDRiLbof1nWYoth5IDL93U4U2RujIu0riG4wQmc2jWxdGSO6aNZJ9qJRtgWiUu+oqj1Zj2FFn4tdrVMAsWPC/hfOo9awg10EElkznUevGtfpbR/zRUN4ns++InTg4YPjdRlUNwbg6TmUifyvhP7w7BXcAU0lOxmFtVAbAAAAAElFTkSuQmCC"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--custom boxicon links-->
+     <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="navegation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon">
+                        <box-icon name='home'></box-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <box-icon name='user-circle'></box-icon>
+                    </span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                <span class="icon">
+                    <box-icon type='solid' name='chat'></box-icon>
+                </span>
+                <span class="text">Message</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <box-icon type="solid" name='cog' ></box-icon>
+                    </span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink));
+    </script>
+
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+</body>
+</html>
