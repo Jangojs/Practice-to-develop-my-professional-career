@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario responisve</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <form autocomplete="off" action="https://formsubmit.co/your@gmail.com" method="POST"">
+     /*ojo el en el action que esta dentro de la etiqueta form vuelve al formulario que quieres enviar mas funcional https://formsubmit.co/(your@gmail.com(tu correo electronico))*/
+        <h2>Contacto</h2>
+
+        <div class="form-txt">
+            <a href="politicas-de-privacidad.html">Politica de privacidad</a>
+            <a href="terminos-y-condiciones.html">Terminos y condiciones</a>
+        </div>
+
+        <div class="input-group">
+            <input type="text" name="name" placeholder="Nombre">
+
+            <input type="tel" name="phone" placeholder="Telefono">
+
+            <input type="email" name="email" placeholder="Email">
+
+            <textarea name="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+            <input class="btn" type="submit" value="Enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/web-responsive/proyect-1-formulario-html/">
+
+            <input type="hidden"  name="_captcha" value="false">
+        </div>
+    </form>
+
+</body>
+</html>
