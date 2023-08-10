@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="img/portafolio.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portafolio</title>
     <link rel="stylesheet" href="css/style.css">
@@ -16,6 +17,64 @@
 
 </head>
 <body>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">Developer <span>Django_js</span></a>
+
+        <ul class="navlist">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="top-btn">
+            <a href="#" class="h-btn">Contact me</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="main-content">
+            <h4>Hi, There!</h4>
+            <h1>I'm <span class="input"></span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Corrupti quo beatae nostrum culpa et esse fugit maxime, aperiam placeat. 
+                Soluta cupiditate, quia voluptate quae quos sapiente voluptas neque in amet?</p>
+                <div class="social">
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                </div>
+
+                <div class="main-btn">
+                    <a href="#" class="btn">Hire Me</a>
+                    <a href="#" class="btn btn2">Download CV</a>
+                </div>
+        </div>
+
+        <div class="bottom">
+            <p> Copyrigth &copy; 2023 - Made by Django_js</p>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     
+    <!-- js link-->
+    <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var Typed = new Typed(".input", {
+            strings:["Django js", "Web Developer", "Computer Technician", "Developer Junior"],
+            typeSpeed: 70,
+            backSpeed: 65,
+            loop:true
+        })
+    </script>
 </body>
 </html>
